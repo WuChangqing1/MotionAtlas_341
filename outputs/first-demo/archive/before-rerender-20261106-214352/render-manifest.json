@@ -1,0 +1,60 @@
+{
+  "project": "MA341-DEMO-001",
+  "source": "D:\\CodingData\\Github\\AICartoonMaking\\MotionAtlas_341\\outputs\\first-demo\\renderer\\still.html",
+  "source_sha256": "f75b895c2d8b782b68248990bd14fa2de77935882ee13018410a8396a9449259",
+  "channel": "chrome",
+  "width": 1920,
+  "height": 1080,
+  "frames": [
+    {
+      "shot": "S01",
+      "time": 1.8,
+      "file": "S01_01.80s.png",
+      "bytes": 2701119,
+      "sha256": "cfbaef835cb0c7c8915a8a674e96efb4895d999776f1f36ac82a23a3f99492db",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S03",
+      "time": 6,
+      "file": "S03_06.00s.png",
+      "bytes": 2712430,
+      "sha256": "ec37c775a74fe45eb92c0a59f4778cc3a151602ac16c0daf3b43315b08bc3376",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S04",
+      "time": 7.8,
+      "file": "S04_07.80s.png",
+      "bytes": 2773551,
+      "sha256": "5c793250299adfb30bf35a73cb5058f4a81958f75d12dff9c72484d69ee6ae31",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S05",
+      "time": 11.2,
+      "file": "S05_11.20s.png",
+      "bytes": 2144611,
+      "sha256": "57b6c3ce4628fe0d6e558697ec5aec41e15f265158d04ad94db76b1a4f62671c",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S06",
+      "time": 12.7,
+      "file": "S06_12.70s.png",
+      "bytes": 2362212,
+      "sha256": "a2345cc9a9c491a4c5c5092e66ed3f6051b50e64baebfa9212c1276b48474bea",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S07",
+      "time": 14.6,
+      "file": "S07_14.60s.png",
+      "bytes": 2169331,
+      "sha256": "1739f39912991453fadd7d76f4b1dcdbee52acda979f23d9db2dc47a198efe23",
+      "deterministic_reopen": true
+    }
+  ],
+  "warnings": [],
+  "verified_visual_by_human": false
+}

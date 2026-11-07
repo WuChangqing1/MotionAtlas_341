@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f6fb">
+  <meta name="description" content="Motion Atlas 341：341 种代码动画风格探索、组合与 DeepSeek Harness 任务包生成工作台。">
+  <title>Motion Atlas 341 · 代码动画创作工作台</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/workbench.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="风格分类导航">
+    <a class="brand" href="#top" aria-label="Motion Atlas 341 首页"><span class="brand-mark">M</span><span><b>Motion Atlas</b><small>341 STYLE WORKBENCH</small></span></a>
+    <div class="sidebar-label">探索风格 <span id="sidebarCount">341</span></div>
+    <nav id="categoryNav" class="category-nav" aria-label="风格系列"></nav>
+    <div class="sidebar-label">工作区</div>
+    <nav class="category-nav">
+      <button class="nav-item" data-special="favorites"><span class="nav-icon">☆</span> 我的收藏 <span class="nav-number" id="favoriteCount">0</span></button>
+      <button class="nav-item" data-special="selected"><span class="nav-icon">✓</span> 已选风格 <span class="nav-number" id="selectedCountSide">0</span></button>
+    </nav>
+    <div class="sidebar-help"><span class="help-icon">✦</span><b>从灵感到任务包</b><p>选择真实风格原文，填写制作需求，导出可执行 Prompt 或 ZIP，交给本地 DeepSeek Harness。</p><button class="text-link" id="sidebarBuild">开始制作 <span aria-hidden="true">→</span></button></div>
+    <a class="case-link" href="showcase/" target="_blank" rel="noopener"><span>成功案例</span><b>《完成之后》↗</b></a>
+  </aside>
+
+  <div class="page-wrap" id="top">
+    <header class="topbar">
+      <div class="mobile-brand"><button class="icon-button" id="menuButton" aria-label="展开分类菜单">☰</button><strong>Motion Atlas</strong></div>
+      <div class="breadcrumb">创作工作台 <span>/</span> <b>风格探索</b></div>
+      <div class="top-actions"><span class="top-status"><span class="status-dot"></span> 341 条原始风格 · 193 张静帧</span><a href="https://ccqspace.site/" class="site-home" target="_blank" rel="noopener">站点首页 ↗</a><button class="icon-button" id="themeButton" title="切换明暗主题" aria-label="切换明暗主题">☾</button></div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> THE CREATIVE MOTION WORKBENCH <span class="eyebrow-line"></span> 2026</span>
+          <h1>341 种动画语言，<br><span>组合成你的下一部片。</span></h1>
+          <p>探索真实风格原文与参考静帧，组合主视觉、动态语言、特效与排版，填写内容与参数，生成可直接交给 DeepSeek Harness 的完整制作 Prompt 或任务包。</p>
+          <div class="hero-buttons"><button class="primary-btn" id="heroExplore">探索 341 种风格 <span>↗</span></button><button class="ghost-btn" id="heroCreate">创建动画任务 <span>→</span></button><a class="ghost-btn case-hero-link" href="showcase/" target="_blank" rel="noopener">观看成功案例 ↗</a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orb orb-back"></div><div class="art-grid"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-main-shape">M</div><div class="art-pill pill-one">Motion <span>↗</span></div><div class="art-pill pill-two"><span class="pill-dot"></span> 341 Styles</div><div class="orb orb-front"></div></div>
+      </section>
+
+      <div class="metrics"><div><span class="metric-number">341<span>+</span></span><span class="metric-caption">原始风格</span></div><div><span class="metric-number">10</span><span class="metric-caption">风格系列</span></div><div><span class="metric-number">193</span><span class="metric-caption">参考静帧</span></div><div class="metrics-note"><span class="metrics-glyph">✧</span><span>原文可核验 · 任务可导出<br>交给本地 DSH 制作</span></div></div>
+
+      <section class="workflow-strip" aria-label="工作流">
+        <div><b>01</b><span>探索并选择风格</span><small>编号 / 关键词 / 原文</small></div>
+        <div><b>02</b><span>配置组合与制作需求</span><small>主视觉 / 动态 / 特效 / 排版</small></div>
+        <div><b>03</b><span>导出 Prompt 或 ZIP</span><small>真实文件，不只是预览</small></div>
+        <div><b>04</b><span>在本地 DSH 制作</span><small>按授权阶段执行</small></div>
+      </section>
+      <p class="example-download"><a href="downloads/MotionAtlas-Task-MA341-EXAMPLE-B3-O63.zip" download>下载真实示例任务包（B3 + O63，ZIP）↗</a> <span>含完整 Prompt、task.json、两份原始 Markdown、Skill 调用说明、许可与 SHA 清单。</span></p>
+
+      <section class="explore" id="explore">
+        <div class="section-title"><div><span class="section-eyebrow">EXPLORE THE LIBRARY</span><h2>发现你的下一种<span>表达方式</span></h2><p>按编号、中英文、关键词、用途或提示词正文搜索。点击卡片查看完整原始 Markdown。</p></div><div class="section-step">01 / DISCOVER</div></div>
+        <div class="search-panel">
+          <div class="search-row"><label class="search-box" for="searchInput"><span class="search-glyph">⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="搜索风格、编号、关键词，例如：B3、水墨、粒子、O63、发布会"><kbd>/</kbd></label><button class="filter-button" id="clearFilters" title="重置筛选">清空筛选 <span>↻</span></button></div>
+          <div class="quick-row"><span class="quick-label">灵感速达</span><div class="quick-chips" id="quickChips"><button data-keyword="科技">科技感</button><button data-keyword="粒子">粒子特效</button><button data-keyword="水墨">水墨国风</button><button data-keyword="像素">像素艺术</button><button data-keyword="漫画">漫画故事</button><button data-keyword="发布">产品发布</button><button data-keyword="文字">文字动效</button><button data-keyword="手绘">手绘风格</button></div></div>
+        </div>
+        <div class="results-bar"><div class="results-title"><h3 id="resultsHeading">全部风格</h3><span class="results-count" id="resultsCount">341 个结果</span></div><div class="result-tools"><label class="toggle-label"><input type="checkbox" id="withImage"><span class="switch"></span> 有参考静帧</label><label class="sort-label">排序 <select id="sortSelect"><option value="default">系列与编号</option><option value="name">名称 A–Z</option><option value="image">有图优先</option></select></label><div class="view-switch"><button id="gridView" class="active" aria-label="网格布局" title="网格布局">▦</button><button id="listView" aria-label="列表布局" title="列表布局">☷</button></div></div></div>
+        <div id="cards" class="cards-grid" aria-live="polite"></div>
+        <div class="empty-results" id="emptyResults" hidden><span>⌕</span><h3>没有找到匹配的风格</h3><p>试试更短的关键词、风格编号，或清空筛选条件。</p><button class="ghost-btn" id="emptyReset">重置筛选</button></div>
+        <div class="load-more-wrap" id="loadMoreWrap" hidden><button class="load-more-btn" id="loadMore">继续浏览 <span id="moreCount"></span> 个风格 ↓</button></div>
+      </section>
+      <footer class="page-footer"><span><b>Motion Atlas</b> · 创意工作台</span><span>原始风格、第三方材料保留来源与许可 · 不作为付费素材售卖 · 公网页面不执行任何服务器命令</span></footer>
+    </main>
+  </div>
+</div>
+
+<div class="selection-bar" id="selectionBar" hidden><div class="selection-content"><div class="selected-avatars" id="selectedAvatars"></div><div class="selection-summary"><b>已选择 <span id="selectedCountBar">0</span> 种风格</b><span>组合这些灵感，创建你的制作任务</span></div><button class="selection-list-btn" id="viewSelected">管理已选</button><button class="selection-go-btn" id="selectionCreate">配置任务 ↗</button></div></div>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="inspector" id="inspector" role="dialog" aria-modal="true" aria-labelledby="inspectorTitle" hidden><div class="drawer-head"><span>STYLE INSPECTOR <span class="drawer-head-sub">/ 风格详情</span></span><button class="close-btn" id="closeInspector" aria-label="关闭详情">×</button></div><div class="drawer-body" id="inspectorBody"></div></aside>
+
+<section class="task-modal" id="taskModal" role="dialog" aria-modal="true" aria-labelledby="taskTitle" hidden>
+  <div class="task-head"><div><span>CREATIVE WORKFLOW / 02</span><h2 id="taskTitle">配置你的动画任务</h2></div><div class="task-head-actions"><span id="taskHeaderState" class="task-save-state">草稿自动保存</span><button class="close-btn" id="closeTask" aria-label="关闭制作任务">×</button></div></div>
+  <div class="task-scroll">
+    <div class="task-layout">
+      <div class="task-fields">
+        <div class="field-grid">
+          <label class="field"><span>作品名称 <em>必填</em></span><input id="taskTitleInput" type="text" placeholder="例如：完成之后 · 第二集"></label>
+          <label class="field"><span>动画主题 <em>必填</em></span><input id="taskTheme" type="text" placeholder="例如：动作完成 ≠ 任务完成"></label>
+        </div>
+        <label class="field"><span>完整文案 / 故事 <em>必填</em></span><textarea id="taskContent" rows="6" placeholder="粘贴完整文案、故事、旁白或分镜构想。网页不会上传这段内容。"></textarea><small>建议写清开头、转折、关键事实与结尾；这是 DSH 理解语义的主要依据。</small></label>
+        <div class="field-grid">
+          <label class="field"><span>目标观众</span><input id="taskAudience" type="text" placeholder="例如：产品团队、学生、发布会观众"></label>
+          <label class="field"><span>希望表达的核心意思</span><input id="taskCore" type="text" placeholder="例如：执行动作不等于验证成功"></label>
+          <label class="field"><span>关键事实 / 必须出现的信息</span><textarea id="taskFacts" rows="2" placeholder="数字、名词、步骤、必须出现的画面"></textarea></label>
+          <label class="field"><span>特别要求</span><textarea id="taskExtra" rows="2" placeholder="镜头、字体、节奏、材质、平台限制"></textarea></label>
+        </div>
+        <div class="field-grid">
+          <label class="field"><span>时长（秒）</span><input id="taskDuration" type="number" min="3" max="300" value="15"><small>可填写 15、30、60；card 阶段可先由分镜估算。</small></label>
+          <label class="field"><span>画幅</span><select id="taskRatio"><option value="16:9" selected>16:9 · 横屏</option><option value="9:16">9:16 · 竖屏</option><option value="1:1">1:1 · 正方形</option><option value="4:3">4:3</option><option value="custom">自定义</option></select></label>
+          <label class="field"><span>分辨率</span><input id="taskResolution" type="text" value="1920x1080"></label>
+          <label class="field"><span>帧率</span><select id="taskFps"><option value="24">24 fps</option><option value="25">25 fps</option><option value="30" selected>30 fps</option><option value="60">60 fps</option></select></label>
+          <label class="field"><span>字幕语言</span><select id="taskLanguage"><option value="中文" selected>中文</option><option value="中英双语">中英双语</option><option value="英文">英文</option><option value="无字幕">无字幕</option></select></label>
+          <label class="field"><span>制作阶段</span><select id="taskPhase"><option value="card" selected>card · 任务卡与分镜</option><option value="still">still · 选定静帧</option><option value="audition">audition · 声音试听</option><option value="final">final · 完整成片（明确授权）</option></select></label>
+        </div>
+        <div class="field-grid">
+          <label class="field"><span>背景音乐</span><select id="taskMusic"><option value="四案音乐，先试听">四案音乐，先试听</option><option value="无音乐">无音乐</option><option value="按内容设计音乐">按内容设计音乐</option></select></label>
+          <label class="field"><span>音效</span><select id="taskSfx"><option value="按镜头设计音效">按镜头设计音效</option><option value="仅关键音效">仅关键音效</option><option value="无音效">无音效</option></select></label>
+          <label class="field"><span>旁白</span><select id="taskNarration"><option value="不需要旁白">不需要旁白</option><option value="需要中文旁白">需要中文旁白</option><option value="由 DSH 判断">由 DSH 判断</option></select></label>
+          <label class="field"><span>人物角色</span><select id="taskCharacters"><option value="不需要">不需要</option><option value="需要贯穿角色">需要贯穿角色</option><option value="由内容决定">由内容决定</option></select></label>
+          <label class="field"><span>风格组合方式</span><select id="taskStyleMode"><option value="主风格 + 辅助特效" selected>主风格 + 辅助特效</option><option value="全片统一">全片统一</option><option value="分镜使用不同风格">分镜使用不同风格</option><option value="由 DSH 根据内容安排">由 DSH 根据内容安排</option></select></label>
+          <label class="field"><span>输出格式</span><select id="taskOutput"><option value="HTML + Canvas 可运行工程 + 静帧/视频">HTML + Canvas 工程</option><option value="Remotion 工程">Remotion 工程</option><option value="由 DSH 选择合适实现">由 DSH 选择</option></select></label>
+        </div>
+        <label class="field"><span>禁止事项</span><textarea id="taskProhibited" rows="2" placeholder="例如：不要使用外部付费素材；不要自动部署；不要虚构测量结果。"></textarea></label>
+        <div class="task-hint"><b>阶段边界</b><span id="phaseHint"></span></div>
+      </div>
+      <aside class="task-side">
+        <div class="task-selected"><div class="selected-head"><b>已选视觉语言</b><span id="taskSelectedCount">0 种</span></div><div id="taskStyleList"></div><p class="task-small">每个风格都携带原始 Markdown 路径与 SHA。可为主视觉、动态语言、辅助特效、排版/配色和场景分配角色。</p><button id="taskBrowse" class="task-browse">+ 继续添加风格</button></div>
+        <div class="task-summary" id="taskSummary"></div>
+        <div class="task-package-box"><label class="field"><span>ZIP 任务包模式</span><select id="taskPackageMode"><option value="light" selected>轻量包 · 选中风格 + 调用说明</option><option value="full">完整离线包 · 完整 Skill + 341 原文</option></select></label><small>轻量包依赖本地完整 Skill/风格库；完整包体积较大，但可在新工作区准备环境。</small></div>
+      </aside>
+    </div>
+    <div class="task-prompt-preview"><div><b>即将发给 DeepSeek Harness 的 Prompt</b><span>与 ZIP 内 PROMPT_FOR_DSH.md 一致</span></div><pre id="taskPromptPreview" tabindex="0"></pre></div>
+  </div>
+  <div class="task-bottom"><span id="taskStatus">请先填写内容并选择风格</span><div class="task-bottom-actions"><button class="ghost-btn" id="saveDraft">保存草稿</button><button class="ghost-btn" id="downloadPrompt">下载 Prompt</button><button class="ghost-btn" id="copyTask">复制 Prompt ↗</button><button class="primary-btn" id="downloadZip">下载任务包 ZIP</button></div></div>
+</section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/data.js" defer></script>
+<script src="js/zip.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c111c">
+  <meta name="description" content="Motion Atlas 341 首部演示短片《完成之后》：动作完成，不等于任务完成。">
+  <title>完成之后 · Motion Atlas 341</title>
+  <style>
+    :root {color-scheme:dark;--bg:#0c111c;--panel:#151d2c;--border:rgba(218,225,245,.14);--ink:#e9edf7;--sub:#afbad1;--gold:#e8bb75}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 70% 40% at 50% 0%,#1d2941 0,transparent 73%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.65}
+    a{color:inherit}header,main,footer{max-width:1100px;margin:0 auto;padding:0 24px}header{display:flex;align-items:center;justify-content:space-between;padding-top:27px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+    .brand{font-size:14px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.brand em{font-style:normal;color:var(--gold)}.label{font-size:12px;border:1px solid var(--border);color:var(--sub);border-radius:100px;padding:4px 11px}
+    .intro{padding:74px 0 33px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--gold);font-weight:750;margin:0 0 16px}h1{font-size:clamp(42px,8vw,86px);font-weight:800;letter-spacing:-.065em;line-height:1.12;margin:0 0 23px}h1 span{display:block;color:#b8c6db;font-size:.52em;letter-spacing:-.02em;margin-top:10px}p{margin:0}.lead{max-width:660px;color:#c3cce0;font-size:clamp(17px,2vw,21px)}
+    .player{position:relative;overflow:hidden;border-radius:17px;border:1px solid rgba(255,255,255,.17);background:#070b12;box-shadow:0 25px 75px rgba(0,0,0,.4)}video{display:block;width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#202b3f,#101721);object-fit:contain}
+    .info{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 56px}.info span{border:1px solid var(--border);color:#bdc7d9;background:#131b29;padding:7px 12px;border-radius:7px;font-size:13px}
+    .sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:63px}.panel{background:linear-gradient(130deg,#172235,#111a29);border:1px solid var(--border);border-radius:13px;padding:24px 26px}.panel h2{font-size:18px;margin:0 0 10px}.panel p{font-size:14px;color:var(--sub)}
+    .high{color:var(--gold)}footer{border-top:1px solid var(--border);padding-top:25px;padding-bottom:42px;color:#8290ab;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    @media(max-width:700px){header{padding-top:18px;padding-bottom:17px}.intro{padding-top:49px}.sections{grid-template-columns:1fr}.panel{padding:19px}.info{margin-bottom:36px}.player{border-radius:9px}}
+  </style>
+</head>
+<body>
+  <header><div class="brand">Motion <em>Atlas</em> / 341</div><div class="label">MA341-DEMO-001 · Picture Lock</div></header>
+  <main>
+    <section class="intro"><p class="eyebrow">Original animation · First demonstration</p><h1>完成之后<span>动作完成 ≠ 任务完成</span></h1><p class="lead">一次机械臂抓取、放置与复核的视觉演示。动作能够执行，不意味着任务目标已得到可靠验证。</p></section>
+    <section class="player" aria-label="播放演示片"><video id="film" controls playsinline preload="metadata" aria-label="《完成之后》十五秒无声演示动画"><source src="./MA341-DEMO-001-picture-lock.mp4" type="video/mp4">您的浏览器无法播放 MP4 视频。请更新浏览器后重试。</video></section>
+    <div class="info"><span>15 秒</span><span>1920 × 1080</span><span>30 FPS</span><span>H.264</span><span>无音轨 · 画锁版</span><span>7 场景</span></div>
+    <div class="sections">
+      <section class="panel"><h2>从<span class="high">动作</span>到<span class="high">验证</span></h2><p>短片以机械臂的抓取与入座动作为起点，随后引入视觉语言模型辅助核验、异常证据与待执行纠正指令。重点不在于完成一次动作，而是判断目标是否真正实现。</p></section>
+      <section class="panel"><h2>模拟演示声明</h2><p>视频中的 6.2 mm、+23° 和 71% 均为模拟演示数据，非真实测量结果。幽灵齿轮为示意外扩轮廓，不表示真实零件尺寸变化，也不代表纠正已经执行成功。</p></section>
+    </div>
+  </main>
+  <footer><span>Motion Atlas 341 · MA341-DEMO-001</span><span>《完成之后》 · 已验收演示片 · 无音轨</span></footer>
+</body>
+</html>

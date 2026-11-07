@@ -1,0 +1,72 @@
+{
+  "project": "MA341-DEMO-001",
+  "source": "D:\\CodingData\\Github\\AICartoonMaking\\MotionAtlas_341\\outputs\\first-demo\\renderer\\still.html",
+  "source_sha256": "eb03a2f1d1e543c42f1707d7513a36ccb1ee42c2c4eabec29fe3391c4ac34994",
+  "channel": "chrome",
+  "width": 1920,
+  "height": 1080,
+  "frames": [
+    {
+      "shot": "S01",
+      "time": 1.8,
+      "file": "S01_01.80s.png",
+      "bytes": 2699115,
+      "sha256": "f105a50fc9ce92051abc5c0965bfd6313e8e425708b2a57c2b1a81a2499c17bc",
+      "bytes_repeat": 2699115,
+      "sha256_repeat": "f105a50fc9ce92051abc5c0965bfd6313e8e425708b2a57c2b1a81a2499c17bc",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S03",
+      "time": 6,
+      "file": "S03_06.00s.png",
+      "bytes": 2703820,
+      "sha256": "59b157ba5a964f262ffc471f32bc93024a3585668c8ae4ab38547057c3cb1c4c",
+      "bytes_repeat": 2703820,
+      "sha256_repeat": "59b157ba5a964f262ffc471f32bc93024a3585668c8ae4ab38547057c3cb1c4c",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S04",
+      "time": 7.8,
+      "file": "S04_07.80s.png",
+      "bytes": 2881744,
+      "sha256": "70316fcb1cafa26d8434fa2edb277620f745a01e334aa28a5249ba6e93b7035d",
+      "bytes_repeat": 2881744,
+      "sha256_repeat": "70316fcb1cafa26d8434fa2edb277620f745a01e334aa28a5249ba6e93b7035d",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S05",
+      "time": 11.2,
+      "file": "S05_11.20s.png",
+      "bytes": 2131059,
+      "sha256": "698f1378ca46313de9b18885ce09b688cd008e943dfc8e8b5c814184f2f7a9c0",
+      "bytes_repeat": 2131059,
+      "sha256_repeat": "698f1378ca46313de9b18885ce09b688cd008e943dfc8e8b5c814184f2f7a9c0",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S06",
+      "time": 12.7,
+      "file": "S06_12.70s.png",
+      "bytes": 2356322,
+      "sha256": "5bfc31aeee78d6ac4d8ba2fd3431c88b683a1e86c3e1e7d07b7154b94da2c3b0",
+      "bytes_repeat": 2356322,
+      "sha256_repeat": "5bfc31aeee78d6ac4d8ba2fd3431c88b683a1e86c3e1e7d07b7154b94da2c3b0",
+      "deterministic_reopen": true
+    },
+    {
+      "shot": "S07",
+      "time": 14.6,
+      "file": "S07_14.60s.png",
+      "bytes": 2174637,
+      "sha256": "c74dd445243bfefbedb03428b69688381e32d2e4c2926856d6b98d972025fb72",
+      "bytes_repeat": 2174637,
+      "sha256_repeat": "c74dd445243bfefbedb03428b69688381e32d2e4c2926856d6b98d972025fb72",
+      "deterministic_reopen": true
+    }
+  ],
+  "warnings": [],
+  "verified_visual_by_human": false
+}

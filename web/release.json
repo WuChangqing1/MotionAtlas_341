@@ -1,0 +1,16 @@
+{
+  "project": "MA341-DEMO-001",
+  "title": "Motion Atlas 341 · 代码动画创作工作台",
+  "version": "workbench-1.0",
+  "base": "/animation/",
+  "video_sha256": "ab039c173f6f9c972da44d468af21265d36376418ef5027d449cbb1b11adebd6",
+  "source_sha256": "6a367ff4f8180f2cd0f05fea0a0478e94c1bb465d40dc46ed1ed09afb987206c",
+  "timeline_sha256": "2a07279233b0c899b7ae8ef417b42494563e7322ae663f3b84032605358b4485",
+  "style_count": 341,
+  "reference_count": 193,
+  "audio_tracks": 0,
+  "case_path": "showcase/",
+  "example_package": "downloads/MotionAtlas-Task-MA341-EXAMPLE-B3-O63.zip",
+  "server_execution": false,
+  "client_side_export": true
+}

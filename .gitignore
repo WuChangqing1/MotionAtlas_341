@@ -1,0 +1,32 @@
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+coverage/
+.DS_Store
+Thumbs.db
+productions/**/renders/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Generated render, QA, diagnostic and historical-fail artifacts stay on the
+# production server / local archive; do not turn the public repo into a render dump.
+outputs/first-demo/film/frames/
+outputs/first-demo/film/archive/
+outputs/first-demo/film/_backup*/
+outputs/first-demo/film/particle-smoke*/
+outputs/first-demo/film/particle-diagnostics*/
+outputs/first-demo/film/particle-*.json
+outputs/first-demo/film/smoke*/
+outputs/first-demo/film/qa-*/
+outputs/first-demo/qa-*/
+outputs/first-demo/film/contact-sheet.html
+outputs/first-demo/film/still-compare.html
+_ziptest.py
+

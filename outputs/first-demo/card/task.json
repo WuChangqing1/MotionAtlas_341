@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "task_id": "MA341-DEMO-001",
+  "title": "完成之后",
+  "phase": "card",
+  "actions": ["read", "write_plan", "logic_check"],
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration": 15.0,
+  "source": {
+    "path": "outputs/first-demo/BRIEF.md",
+    "status": "design_brief"
+  },
+  "style": {
+    "arrangement": "single_fused",
+    "decision_status": "author_requested_unified",
+    "selection": [
+      {
+        "id": "B3",
+        "name": "粒子聚形",
+        "kind": "prompt",
+        "path": "style-library/风格提示词/A-G_代码样片/B3_粒子聚形.md",
+        "sha256": "2a784814e01c2ca003b6c5c2ddb1cffb84b0f57f45e6416543b95eecaaf66af1",
+        "role": "evidence_particle_layer"
+      },
+      {
+        "id": "O63",
+        "name": "与狼共舞（Dances with Wolves）",
+        "kind": "prompt",
+        "path": "style-library/风格提示词/O_奥斯卡98部/O63_与狼共舞.md",
+        "sha256": "a9ad027c6b13ce25a58b8b9f23d09fddb8b4ef067f8677bcba7e2e8a5c44e4fe",
+        "role": "paper_watercolor_world"
+      }
+    ]
+  },
+  "music": {
+    "status": "planned",
+    "actual_sync": false,
+    "file": null,
+    "plans": 4
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 2.0,
+      "time_basis": "planned",
+      "meaning": "任务与结果约束被读清：齿轮入 A 座，卡榫朝上，完全贴合。",
+      "operation": "铅笔线稿→水彩由远及近铺上→铁胆墨水写入任务票；粒子在 A 座边缘聚成细环。",
+      "last_text_at": 1.65,
+      "read_seconds": 0.35,
+      "source_span": "任务书与规格",
+      "camera": "push 1.00→1.06, center (960,540)→(930,560)",
+      "transition": "S01→S02：A 座圆环线加粗为机械臂基座圆"
+    },
+    {
+      "id": "S02",
+      "start": 2.0,
+      "end": 4.4,
+      "time_basis": "planned",
+      "meaning": "机械臂完成抓取；动作干净，但还没有任何结果证据。",
+      "operation": "机械臂入画、对准、夹爪闭合、齿轮离架抬起 40px。",
+      "last_text_at": 2.0,
+      "read_seconds": 0.0,
+      "source_span": "机器人抓取物体",
+      "camera": "track center 960→1080, zoom 1.06→1.02",
+      "transition": "S02→S03：齿轮外圆与 A 座目标环同尺寸匹配剪辑"
+    },
+    {
+      "id": "S03",
+      "start": 4.4,
+      "end": 6.4,
+      "time_basis": "planned",
+      "meaning": "放置动作完成，“完成”章落下；观众得到一次假结论。",
+      "operation": "齿轮弧线移入、下落、座落；夹爪松开、机械臂收回；“完成”章压下、纸面回弹、鼠尾草 wash 绽开；6.30 出现发丝缝。",
+      "last_text_at": 5.95,
+      "read_seconds": 0.35,
+      "source_span": "放到目标位置，看似完成动作",
+      "camera": "center (1000,620), zoom 1.02→1.00, rotate -1.5°→0",
+      "transition": "S03→S04：印章湿边与微距同一条湿边 1:1 匹配"
+    },
+    {
+      "id": "S04",
+      "start": 6.4,
+      "end": 8.4,
+      "time_basis": "planned",
+      "meaning": "目检发现缝隙与卡榫朝向不对；“完成”开始失效。",
+      "operation": "0.25 秒全静止；焦点从印章拉到缝；卡尺、规格虚影（偏 23°）、间隙标注；8.20 铁锈 wash 渗入缝。",
+      "last_text_at": 7.9,
+      "read_seconds": 0.4,
+      "source_span": "通过视觉检查发现摆放不符合要求",
+      "camera": "center (960,620)→(820,760), zoom 1.00→1.40",
+      "transition": "S04→S05：尺寸括号水平线延伸为扫描线"
+    },
+    {
+      "id": "S05",
+      "start": 8.4,
+      "end": 11.5,
+      "time_basis": "planned",
+      "meaning": "VLM 复核给出位置 6.2 mm、朝向 −23°、贴合 71% 三项证据并判未完成；假章溶解、真章落下。",
+      "operation": "扫描幕 8.60–10.40 从左到右；三项证据逐条落；10.20 剖面显示卡榫；10.95 假章碎成粒子；11.15 “未完成”章压下。",
+      "last_text_at": 11.15,
+      "read_seconds": 0.35,
+      "source_span": "最终通过 VLM 验证确认任务失败",
+      "camera": "center (960,600)→(960,540), zoom 1.25→1.00",
+      "transition": "S05→S06：未完成章圆环成为纠正弧圆心"
+    },
+    {
+      "id": "S06",
+      "start": 11.5,
+      "end": 13.6,
+      "time_basis": "planned",
+      "meaning": "失败转成可执行纠正：旋转 +23°、内推 6.2 mm；不执行重试。",
+      "operation": "页面回正；纠正弧与直线画出；幽灵齿轮旋转/平移到目标位并锁定；机械臂重新入场悬停。",
+      "last_text_at": 12.5,
+      "read_seconds": 0.55,
+      "source_span": "给出纠正反馈",
+      "camera": "center (960,540)→(960,560), zoom 1.00→0.92",
+      "transition": "S06→S07：拉远不停，同一页面与相机终点直接延续"
+    },
+    {
+      "id": "S07",
+      "start": 13.6,
+      "end": 15.0,
+      "time_basis": "planned",
+      "meaning": "落点：动作完成 ≠ 任务完成；任务仍未完成，纠正指令已生成。",
+      "operation": "宽景回环；整句墨字上移入；“≠”铁锈章压下；粒子下划线在 ≠ 处断开；副句淡入；停稳 1.15 秒。",
+      "last_text_at": 13.85,
+      "read_seconds": 1.15,
+      "source_span": "主题句",
+      "camera": "center (960,540), zoom 0.92→0.90, stop at 14.2",
+      "transition": "片尾：不淡黑，纸面保持，粒子静止"
+    }
+  ],
+  "events": [
+    {"id": "E01", "scene_id": "S01", "at": 0.60, "time_basis": "planned", "role": "wash_arrives", "allow_snap": false},
+    {"id": "E02", "scene_id": "S01", "at": 1.65, "time_basis": "planned", "role": "task_ink_lands", "allow_snap": false},
+    {"id": "E03", "scene_id": "S02", "at": 2.35, "time_basis": "planned", "role": "arm_enters", "allow_snap": true, "sync_tolerance": 0.08},
+    {"id": "E04", "scene_id": "S02", "at": 3.10, "time_basis": "planned", "role": "gripper_closes", "allow_snap": false},
+    {"id": "E05", "scene_id": "S02", "at": 4.20, "time_basis": "planned", "role": "gear_lifts", "allow_snap": true, "sync_tolerance": 0.08},
+    {"id": "E06", "scene_id": "S03", "at": 5.50, "time_basis": "planned", "role": "gear_seats", "allow_snap": false},
+    {"id": "E07", "scene_id": "S03", "at": 5.95, "time_basis": "planned", "role": "false_done_stamp", "allow_snap": false},
+    {"id": "E08", "scene_id": "S03", "at": 6.30, "time_basis": "planned", "role": "gap_first_visible", "allow_snap": true, "sync_tolerance": 0.10},
+    {"id": "E09", "scene_id": "S04", "at": 6.65, "time_basis": "planned", "role": "inspection_freeze_ends", "allow_snap": false},
+    {"id": "E10", "scene_id": "S04", "at": 7.55, "time_basis": "planned", "role": "spec_ghost_gathers", "allow_snap": true, "sync_tolerance": 0.10},
+    {"id": "E11", "scene_id": "S04", "at": 8.20, "time_basis": "planned", "role": "caliper_gap", "allow_snap": false},
+    {"id": "E12", "scene_id": "S05", "at": 8.60, "time_basis": "planned", "role": "scan_starts", "allow_snap": true, "sync_tolerance": 0.05},
+    {"id": "E13", "scene_id": "S05", "at": 9.05, "time_basis": "planned", "role": "position_evidence", "allow_snap": true, "sync_tolerance": 0.04},
+    {"id": "E14", "scene_id": "S05", "at": 9.45, "time_basis": "planned", "role": "rotation_evidence", "allow_snap": true, "sync_tolerance": 0.04},
+    {"id": "E15", "scene_id": "S05", "at": 9.85, "time_basis": "planned", "role": "contact_evidence", "allow_snap": true, "sync_tolerance": 0.04},
+    {"id": "E16", "scene_id": "S05", "at": 10.95, "time_basis": "planned", "role": "false_stamp_dissolves", "allow_snap": false},
+    {"id": "E17", "scene_id": "S05", "at": 11.15, "time_basis": "planned", "role": "fail_seal", "allow_snap": false},
+    {"id": "E18", "scene_id": "S05", "at": 11.35, "time_basis": "planned", "role": "vlm_label", "allow_snap": true, "sync_tolerance": 0.05},
+    {"id": "E19", "scene_id": "S06", "at": 11.75, "time_basis": "planned", "role": "correction_path", "allow_snap": false},
+    {"id": "E20", "scene_id": "S06", "at": 12.70, "time_basis": "planned", "role": "ghost_gear_locks", "allow_snap": false},
+    {"id": "E21", "scene_id": "S06", "at": 13.20, "time_basis": "planned", "role": "gripper_reenters", "allow_snap": true, "sync_tolerance": 0.08},
+    {"id": "E22", "scene_id": "S07", "at": 13.65, "time_basis": "planned", "role": "closing_line_begins", "allow_snap": false},
+    {"id": "E23", "scene_id": "S07", "at": 14.30, "time_basis": "planned", "role": "particle_settles", "allow_snap": true, "sync_tolerance": 0.05},
+    {"id": "E24", "scene_id": "S07", "at": 14.40, "time_basis": "planned", "role": "correction_subline", "allow_snap": true, "sync_tolerance": 0.10}
+  ],
+  "evidence": {
+    "logic": [
+      "style_library.py doctor --root ./style-library: ready=true, prompt_count=341, library_version=4a96742d3643538227c849a593380f25b66f001f613ed2915dd20f3dfd216f5a",
+      "style_library.py get B3/O63: full content read; SHA256 matched index",
+      "validate_task.py: result recorded in outputs/first-demo/STATUS.md"
+    ],
+    "viewed": [],
+    "heard": [],
+    "author_accepted": false
+  }
+}

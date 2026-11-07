@@ -1,0 +1,42 @@
+﻿{
+    "output":  "D:\\CodingData\\Github\\AICartoonMaking\\MotionAtlas_341\\outputs\\first-demo\\film\\MA341-DEMO-001-picture-lock.mp4",
+    "bytes":  7612522,
+    "sha256":  "ab039c173f6f9c972da44d468af21265d36376418ef5027d449cbb1b11adebd6",
+    "source_sha256":  "6a367ff4f8180f2cd0f05fea0a0478e94c1bb465d40dc46ed1ed09afb987206c",
+    "timeline_sha256":  "2a07279233b0c899b7ae8ef417b42494563e7322ae663f3b84032605358b4485",
+    "ffprobe":  {
+                    "programs":  [
+
+                                 ],
+                    "stream_groups":  [
+
+                                      ],
+                    "streams":  [
+                                    {
+                                        "codec_name":  "h264",
+                                        "width":  1920,
+                                        "height":  1080,
+                                        "pix_fmt":  "yuv420p",
+                                        "avg_frame_rate":  "30/1",
+                                        "duration":  "15.000000",
+                                        "nb_frames":  "450"
+                                    }
+                                ],
+                    "format":  {
+                                   "format_name":  "mov,mp4,m4a,3gp,3g2,mj2",
+                                   "duration":  "15.000000",
+                                   "size":  "7612522"
+                               }
+                },
+    "checks":  {
+                   "codec_h264":  true,
+                   "width_1920":  true,
+                   "height_1080":  true,
+                   "yuv420p":  true,
+                   "fps_30":  true,
+                   "frames_450":  true,
+                   "duration_15":  true,
+                   "no_audio":  true
+               },
+    "passed":  true
+}

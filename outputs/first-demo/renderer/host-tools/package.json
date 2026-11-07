@@ -1,0 +1,8 @@
+{
+  "name": "motionatlas-host-canvas-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trusted host-side Chrome/Edge renderer for MA341 first demo",
+  "scripts": { "capture": "node capture-stills.cjs" },
+  "devDependencies": { "playwright-core": ">=1.50.0 <2.0.0" }
+}
