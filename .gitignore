@@ -30,3 +30,6 @@ outputs/first-demo/film/contact-sheet.html
 outputs/first-demo/film/still-compare.html
 _ziptest.py
 
+# Reproducible local pipeline outputs; example tasks and renderer sources are tracked.
+outputs/pipeline-*/
+

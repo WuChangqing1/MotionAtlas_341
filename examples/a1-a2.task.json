@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "task_id": "MA341-A1-A2-20261118",
+  "title": "那些没说出口的话",
+  "brief": "那些没说出口的话",
+  "phase": "final",
+  "duration_seconds": 20,
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 341,
+  "style_ids": [
+    "A1",
+    "A2"
+  ],
+  "styles": [
+    {
+      "id": "A1",
+      "path": "style-library/风格提示词/A-G_代码样片/A1_字雨.md",
+      "sha256": "123981cfe82263faf3e6688cb77907a105d9117e9efe9e37df088ccf1c45d204"
+    },
+    {
+      "id": "A2",
+      "path": "style-library/风格提示词/A-G_代码样片/A2_光标打字.md",
+      "sha256": "1a37d635f87f92d2ac9e780914442899b9272f06abcf9d7b89d8b12bcfcf3947"
+    }
+  ],
+  "style_roles": {
+    "A1": "main",
+    "A2": "motion"
+  },
+  "style_mode": "主风格 + 辅助特效",
+  "audio": {
+    "mode": "ambient",
+    "narration": "不需要旁白",
+    "sfx": "无音效"
+  },
+  "output": {
+    "format": "mp4",
+    "source": true,
+    "stills": true,
+    "manifest": true,
+    "qa": true
+  },
+  "constraints": "仅本机程序绘制，固定 seed",
+  "prohibited": "不下载素材、不付费、不虚构",
+  "authorization": {
+    "final_render": true,
+    "autonomous_decisions": true
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6,
+      "text": "有些话，反复在心里落下。",
+      "rain_words": [
+        "再等等",
+        "别说了",
+        "没关系",
+        "想开点"
+      ]
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "text": "写了又删，删了又写。",
+      "rain_words": [
+        "算了",
+        "其实",
+        "我想说",
+        "没事"
+      ]
+    },
+    {
+      "start": 13,
+      "end": 20,
+      "text": "这一次，让自己的声音留下。",
+      "rain_words": [
+        "说出来",
+        "我愿意",
+        "听见",
+        "留下"
+      ]
+    }
+  ]
+}

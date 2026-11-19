@@ -1,24 +1,33 @@
 # Motion Atlas 341 · 代码动画创作工作台
 
-341 种真实代码动画风格、193 张参考静帧、可组合的任务编辑器，以及可直接交给 **DeepSeek Harness** / `fy-code-animation` Skill 的 Prompt 与 ZIP 任务包生成器。
+341 种真实代码动画风格、193 张参考静帧。选择风格，写一句想法，复制一个 Prompt，让 **DeepSeek Harness** 自主完成分镜、代码、视频渲染与检查。无需下载 ZIP 或手动编辑任务参数。
 
 - **在线工作台**：<https://ccqspace.site/animation/>
 - **成功案例**：《完成之后》<https://ccqspace.site/animation/showcase/>
 - **总首页入口**：<https://ccqspace.site/>
 - **GitHub**：<https://github.com/WuChangqing1/MotionAtlas_341>
 
-> 状态：工作台已部署；自动静态/ZIP/Skill 检查通过，浏览器交互和桌面/手机布局仍标记为人工 QA 待复核。详见 [`docs/QA_REPORT.md`](docs/QA_REPORT.md)。
+默认：20 秒、1080p、30fps、中文、一条本机氛围床，直接授权完整成片。需要时可展开高级设置。网页只复制任务；制作在本地 DSH 完成，不调用付费 API。
 
-## 核心功能
+## 使用
 
-- **341 条风格**：10 个系列（A–G、M、K、Z、H、L、V、X、R、O），编号/中英文/关键词/原文搜索，类别筛选，收藏，多选，已选视图。
-- **真实资料**：193 张本地参考图；完整原始 Markdown；原文路径与 SHA256；无图明确标注；“不完整”原文（8 条）不伪造内容。
-- **组合**：主视觉 / 动态语言 / 辅助特效 / 排版配色 / 特定场景；全片统一、分镜不同、主风格+辅助、由 DSH 安排；冲突提醒。
-- **任务编辑**：主题、文案、观众、核心意思、事实、时长、画幅、分辨率、帧率、字幕、音乐、音效、旁白、角色、输出、阶段、禁止事项。
-- **Prompt**：以 `/fy-code-animation` 开头，同时明确 Skill 实际加载验证；包含风格原文路径/SHA、DSH 模块、`build/doctor/get` 自检、制作流程、阶段边界、验收与禁止事项。
-- **ZIP**：真实客户端下载；轻量包与完整离线包；包含任务 JSON、选中风格原文、参考图、Skill 调用说明、Windows PowerShell 说明、许可、SHA manifest；不依赖外部 CDN。
-- **示例**：[`web/downloads/MotionAtlas-Task-MA341-EXAMPLE-B3-O63.zip`](web/downloads/MotionAtlas-Task-MA341-EXAMPLE-B3-O63.zip)（B3 + O63）。
-- **原案例**：已验收《完成之后》移至 `showcase/`，MP4 SHA256 `ab039c173f6f9c972da44d468af21265d36376418ef5027d449cbb1b11adebd6` 未改。
+1. 在工作台选择喜欢的风格（支持搜索、收藏、多选）。
+2. 写下动画想法，点击“复制成片 Prompt”。
+3. 在本地 MotionAtlas_341 工作区的 DSH 粘贴发送一次，DSH 自动保存参数、完成制作并返回 MP4。
+
+Prompt 包含实际 Skill 加载要求、完整任务 JSON、所选风格路径和 SHA、成片授权及真实 QA 要求。341 原文/193 静帧保留；原文不完整的 8 条风格会阻止制作，不用虚构替代。历史 ZIP 和 writer 作为历史文件保留，不再是网站功能。
+
+执行器内置 A1/A2、L42/V6 的可复用适配；其他风格由 DSH 读完原文后实现独立适配，不保证模型无需返修就生成符合预期的视频。依赖不足会明确报告。
+
+开发者可直接验证示例：
+
+```powershell
+python tools/animate.py --task examples/a1-a2.task.json --out outputs/my-film
+```
+
+执行入口、字段、扩展接口及失败定位见 [执行说明](docs/EXECUTION_PIPELINE.md)，真实测试和观看边界见 [执行 QA](docs/EXECUTION_QA.md)。
+
+原成功案例《完成之后》MP4 SHA256：`ab039c173f6f9c972da44d468af21265d36376418ef5027d449cbb1b11adebd6`，不覆盖。
 
 ## 目录
 
@@ -56,20 +65,17 @@ python -m http.server 18094 --directory web
 ## Skill 自检
 
 ```powershell
-python .dsh/skills/fy-code-animation/scripts/style_library.py build --root ./style-library
 python .dsh/skills/fy-code-animation/scripts/doctor.py --root ./style-library
 python .dsh/skills/fy-code-animation/scripts/style_library.py get --root ./style-library --query B3
 ```
 
-`doctor` 应返回 `ready=true`、`verdict=ready`、`prompt_count=341`。如果当前文件系统只读导致 build 无法写 `adapters/style-index.json`，以 doctor 的库/索引一致性结果为准并修复写权限；不要伪造 build 成功。
+`doctor` 应返回 `ready=true`、`verdict=ready`、`prompt_count=341`。索引过期且 Skill 只读时，使用执行说明中的可写索引 fallback；不要伪造 build 成功。
 
 ## 部署
 
 - 生产 URL：`https://ccqspace.site/animation/`
 - Nginx：现有 `/animation/` → `127.0.0.1:18093`，无新增公网端口
-- 当前 release：`/var/www/motion-atlas-341/releases/20261107T1250Z-workbench`
-- 旧 release：`/var/www/motion-atlas-341/releases/20261107T042005Z-ab039c173f6f`
-- 回滚：[`docs/ROLLBACK.md`](docs/ROLLBACK.md)
+- 本次发布与精确回滚记录：[`docs/DEPLOYMENT_ONE_PROMPT.md`](docs/DEPLOYMENT_ONE_PROMPT.md)
 
 ## 许可与来源
 

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "task_id": "MA341-L42-V6-20261118",
+  "title": "把散乱的想法，整理成清晰的表达。",
+  "brief": "把散乱的想法，整理成清晰的表达。",
+  "phase": "final",
+  "duration_seconds": 20,
+  "aspect_ratio": "16:9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "seed": 341,
+  "style_ids": [
+    "L42",
+    "V6"
+  ],
+  "styles": [
+    {
+      "id": "L42",
+      "path": "style-library/风格提示词/L_Lemo-Opuscar/L42_暗色科技发布.md",
+      "sha256": "5f529e7abc26e01e8b634de1620bfda35827e2158c6b06a4dafd26373e443cc8"
+    },
+    {
+      "id": "V6",
+      "path": "style-library/风格提示词/V_mg-styles-15/V6_形变.md",
+      "sha256": "c63e68216cbc41b97116e9db9509dcef3909b378704e7c229614996194d35b94"
+    }
+  ],
+  "style_roles": {
+    "L42": "main",
+    "V6": "motion"
+  },
+  "style_mode": "主风格 + 辅助特效",
+  "audio": {
+    "mode": "ambient",
+    "narration": "不需要旁白",
+    "sfx": "无音效"
+  },
+  "output": {
+    "format": "mp4",
+    "source": true,
+    "stills": true,
+    "manifest": true,
+    "qa": true
+  },
+  "constraints": "仅本机程序绘制，固定 seed",
+  "prohibited": "不下载素材、不付费、不虚构",
+  "authorization": {
+    "final_render": true,
+    "autonomous_decisions": true
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6,
+      "text": "想法散落，表达尚未成形。"
+    },
+    {
+      "start": 6,
+      "end": 13,
+      "text": "一次整理，让关系各归其位。"
+    },
+    {
+      "start": 13,
+      "end": 20,
+      "text": "从混乱到清晰，形随意动。"
+    }
+  ]
+}

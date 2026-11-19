@@ -1,0 +1,112 @@
+/* V2: content-first workbench. Keeps the 341 data and export engine, removes the marketing shell. */
+.hero,.metrics,.workflow-strip,.example-download{display:none!important}
+.inspector[hidden],.task-modal[hidden],.overlay[hidden]{display:none!important}
+body{overflow-x:hidden;background:#f5f5f7;color:#24262e}
+.sidebar{width:210px;background:#fff;border-right:1px solid #e6e7ec}
+.page-wrap{margin-left:210px}
+.topbar{border-bottom:1px solid #e6e7ec;background:#fff}
+.main-content{max-width:1440px;padding:28px 34px 70px}
+.start-panel{background:#fff;border:1px solid #e3e5ea;border-radius:16px;padding:30px 32px 24px;margin:0 0 30px;box-shadow:0 2px 8px rgba(20,25,40,.03)}
+.start-kicker{font-size:10px;letter-spacing:1.6px;color:#8c90a0;font-weight:750;margin:0 0 8px}
+.start-panel h1{font-size:clamp(28px,3.2vw,42px);line-height:1.15;letter-spacing:-.04em;margin:0 0 8px;color:#20222a;font-weight:780}
+.start-sub{font-size:14px;color:#737887;margin:0 0 18px}
+#startIntent{width:100%;min-height:78px;resize:vertical;border:1px solid #dfe1e8;border-radius:10px;padding:13px 14px;font:14px/1.7 inherit;color:#2c2f39;background:#fcfcfe;outline:none}
+#startIntent:focus{border-color:#8f88e8;box-shadow:0 0 0 3px #8f88e81f}
+.start-controls{display:flex;align-items:end;gap:9px;flex-wrap:wrap;margin:11px 0 10px}
+.start-controls label{display:flex;flex-direction:column;gap:4px;font-size:10px;color:#8b8f9e;font-weight:650}
+.start-controls select{border:1px solid #dde0e7;border-radius:7px;background:#fff;padding:7px 8px;font:12px/1.4 inherit;color:#414552;min-height:34px}
+.start-controls .primary-btn,.start-controls .ghost-btn{min-height:35px;font-size:12px;padding:8px 14px;border-radius:8px}
+.start-controls .primary-btn{background:#5b56c9;border-color:#5b56c9;color:#fff}
+.start-help{font-size:11px;color:#8c90a0;margin:4px 0 0;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.start-help button{border:0;background:none;color:#5b56c9;font:inherit;font-weight:700;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:2px}
+#startHint{color:#a2a5b1;font-size:10px}
+.case-link{background:#fafafa;border-color:#e7e7ec}
+.quick-row,.search-panel .quick-row{display:none!important}
+.section-title h2{font-size:clamp(21px,2vw,27px)}
+.section-title p{font-size:12px}
+.explore{margin-top:2px}
+.search-panel{background:transparent;border:0;padding:0;margin:0 0 13px;box-shadow:none}
+.search-row{max-width:780px}
+.search-box{background:#fff;border-color:#dfe1e8}
+.category-nav .nav-item{font-size:12px;padding:8px 9px}
+.sidebar-help{display:none}
+
+/* Centered large style detail, replacing the right drawer. */
+.overlay{background:rgba(16,19,28,.48);backdrop-filter:blur(2px)}
+.inspector{position:fixed;left:50%;top:50%;right:auto;bottom:auto;transform:translate(-50%,-50%);width:min(1400px,92vw);height:min(92vh,900px);max-height:92vh;border-radius:16px;border:1px solid #d9dbe3;background:#fff;box-shadow:0 26px 90px rgba(8,12,25,.32);overflow:hidden;display:flex;flex-direction:column}
+.inspector .drawer-head{flex:0 0 auto;padding:12px 18px;background:#fff;border-bottom:1px solid #ececf1;color:#6e7280;font-size:10px;letter-spacing:1.2px}
+.inspector .drawer-body{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(310px,.88fr);gap:0;overflow:hidden;padding:0}
+.detail-visual{min-width:0;min-height:0;background:#10131b;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.detail-visual .drawer-preview{margin:0;width:100%;height:100%;border-radius:0;background:#10131b}
+.detail-visual .drawer-preview img{width:100%;height:100%;object-fit:contain;display:block}
+.detail-visual .placeholder{min-height:100%;border-radius:0;color:#c6c8d2;background:#151925}
+.detail-info{min-width:0;min-height:0;overflow:auto;padding:26px 27px 30px;background:#fff}
+.detail-info .drawer-meta{font-size:10px;letter-spacing:1px;color:#8b8f9e;margin:0 0 5px}
+.detail-info .drawer-title{font-size:clamp(24px,2.3vw,34px);line-height:1.15;margin:0 0 6px;color:#20222a;letter-spacing:-.035em}
+.detail-info .drawer-english{font-size:11px;color:#989cab;margin:0 0 8px}
+.detail-info .drawer-desc{font-size:13px;line-height:1.7;color:#5f6473;margin:0 0 13px}
+.detail-info .drawer-buttons{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px}
+.detail-info .drawer-buttons button{font-size:11px;padding:8px 10px;border-radius:7px}
+.detail-info .drawer-kv{grid-template-columns:70px 1fr;font-size:11px;gap:7px 10px;padding:12px 0;border-top:1px solid #ececf1;border-bottom:1px solid #ececf1;margin:0 0 14px}
+.detail-info .drawer-kv dt{color:#9a9eab}.detail-info .drawer-kv dd{color:#4d5261}
+.detail-info .tech-details{border:1px solid #e6e7ec;border-radius:8px;padding:10px 12px;margin:0 0 10px;background:#fbfbfd}
+.detail-info .tech-details summary{cursor:pointer;font-size:11px;font-weight:700;color:#5b56c9}
+.detail-info .tech-details .prompt-head{margin-top:11px}
+.detail-info .prompt-source{max-height:240px;font-size:10px;background:#f7f7fa;color:#4e5362}
+.detail-info .drawer-zoom{right:12px;bottom:12px;font-size:10px}
+.inspector .drawer-prev,.inspector .drawer-next{position:absolute;top:50%;transform:translateY(-50%);z-index:5;border:1px solid #ffffff38;background:#10131bbd;color:#fff;width:34px;height:44px;border-radius:7px;font-size:18px;cursor:pointer}
+.inspector .drawer-prev{left:12px}.inspector .drawer-next{right:calc(35% + 12px)}
+.inspector .drawer-count{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);z-index:5;background:#10131bbb;color:#fff;font-size:10px;padding:4px 8px;border-radius:5px}
+
+/* Task modal: simple mode by default; all advanced fields stay in the DOM and are revealed by the toggle. */
+.task-modal{width:min(1080px,94vw);max-height:92vh;border-radius:16px;border-color:#dfe1e8;background:#fff;box-shadow:0 25px 80px rgba(8,12,25,.28)}
+.task-head{padding:16px 22px;border-bottom:1px solid #ececf1;background:#fff}
+.task-head h2{font-size:22px;margin:2px 0 0;letter-spacing:-.02em}
+.task-head>div>span{font-size:9px;letter-spacing:1.4px;color:#999daa}
+.task-head-actions{gap:10px}
+.task-save-state{font-size:10px;color:#9da1ae}
+.task-scroll{padding:20px 22px 10px}
+.task-layout{grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:18px}
+.task-fields .field{margin-bottom:12px}.task-fields .field>span{font-size:11px;color:#5d6270;font-weight:650}.task-fields textarea,.task-fields input,.task-fields select{font-size:12px;border-color:#dfe1e8;background:#fff}
+.task-fields .advanced-field{display:none}
+.task-fields.show-advanced .advanced-field{display:block}
+.task-fields .essential{display:block}
+.task-fields .field-grid{display:grid;gap:10px}.task-fields .advanced-field .field-grid{display:block}
+#taskContent{min-height:116px;font-size:13px}
+.task-selected{border:1px solid #e6e7ec;border-radius:10px;background:#fcfcfe;padding:12px}
+.task-selected .selected-head b{font-size:12px}.task-selected .selected-head span{font-size:10px}
+.task-style-row{font-size:11px}.task-small{font-size:10px;color:#9a9eab;line-height:1.6}
+.task-summary{background:#fcfcfe;border-color:#e6e7ec;border-radius:10px;padding:12px;font-size:10px}
+.summary-kv{grid-template-columns:58px 1fr;gap:5px 7px}.summary-kv b{color:#5b56c9}
+.task-prompt-preview{margin:3px 0 0;border-color:#e6e7ec;border-radius:10px;padding:12px;background:#fcfcfe}
+.task-prompt-preview pre{max-height:150px;font-size:10px;background:#f7f7fa;color:#4f5462}
+.task-bottom{padding:12px 20px;border-top:1px solid #ececf1;background:#fff;position:sticky;bottom:0;z-index:3;gap:10px}
+#taskStatus{font-size:10px;color:#8b8f9e;max-width:36%}
+.task-bottom-actions{gap:7px}.task-bottom-actions button{font-size:11px;padding:8px 10px;border-radius:7px}.task-bottom-actions .primary-btn{background:#5b56c9;border-color:#5b56c9;color:#fff;min-width:140px}
+#advancedToggle{background:#fff;border-color:#d9dbe5;color:#5b56c9}
+.task-head-actions .clear-btn{font-size:10px;border:0;background:none;color:#9a6c6c;cursor:pointer;text-decoration:underline}
+.task-package-box{border-color:#e6e7ec;background:#fcfcfe}
+.task-package-box .field>span{font-size:10px}.task-package-box select{font-size:11px}
+.task-hint{font-size:10px;padding:8px 10px;background:#f7f7fa;border-radius:7px}
+@media(max-width:1100px){.inspector{grid-template-columns:1fr}.inspector .drawer-body{grid-template-columns:1fr}.detail-visual{max-height:46vh}.detail-info{max-height:46vh}.inspector .drawer-next{right:12px}.task-layout{grid-template-columns:1fr}.task-side{order:-1}.task-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px}.task-summary .summary-head,.task-summary .summary-warnings,.task-summary .summary-missing{grid-column:1/-1}}
+@media(max-width:760px){.sidebar{width:250px}.page-wrap{margin-left:0}.main-content{padding:16px 14px 54px}.start-panel{padding:20px 16px;border-radius:12px;margin-bottom:18px}.start-controls{gap:7px}.start-controls label{flex:1;min-width:100px}.start-controls .primary-btn,.start-controls .ghost-btn{width:100%;flex:1 1 100%}.start-panel h1{font-size:28px}.start-help{font-size:10px;line-height:1.6}.inspector{width:100vw;height:100dvh;max-height:100dvh;border-radius:0;top:0;left:0;transform:none}.inspector .drawer-head{padding:10px 14px}.inspector .drawer-body{grid-template-columns:1fr;overflow:auto}.detail-visual{height:44dvh;min-height:220px}.detail-info{max-height:none;overflow:visible;padding:18px 16px 80px}.detail-info .drawer-buttons{position:sticky;bottom:0;background:#fff;padding:8px 0;margin:0 -2px;z-index:4}.inspector .drawer-prev,.inspector .drawer-next{top:38%;width:30px;height:38px}.inspector .drawer-next{right:8px}.task-modal{width:100vw;height:100dvh;max-height:100dvh;border-radius:0;top:0;left:0;transform:none}.task-scroll{padding:14px}.task-head{padding:12px 14px}.task-head h2{font-size:19px}.task-bottom{position:sticky;padding:9px 12px;display:block}.task-bottom-actions{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:6px}.task-bottom-actions .primary-btn{grid-column:1/-1;min-width:0}.task-bottom-actions button{font-size:10px;padding:9px 5px}.task-summary{display:block}.task-prompt-preview pre{max-height:120px}}
+@media(max-width:430px){.main-content{padding-left:10px;padding-right:10px}.start-panel{padding:16px 13px}.start-panel h1{font-size:25px}.start-sub{font-size:12px}#startIntent{font-size:12px}.start-controls label{min-width:0}.detail-info .drawer-title{font-size:24px}.detail-visual{height:38dvh}.task-fields .field-grid{display:block}.task-fields .field-grid .field{margin-bottom:10px}}
+
+/* One-prompt workflow: one brief, optional production controls. */
+.page-wrap{margin-left:0}.sidebar{overflow-x:hidden}
+.brand{padding-left:2px;padding-right:2px;gap:8px}.brand>span:last-child{display:flex;flex-direction:column;min-width:0}.brand b{font-size:17px}.brand small{font-size:10px;letter-spacing:.4px;color:var(--soft)}
+.start-sub,#startIntent,#taskContent{font-size:16px;line-height:1.7}
+.start-controls .primary-btn,.start-controls .ghost-btn,.task-bottom-actions button{min-height:44px;font-size:14px}
+.start-help,.start-selection,.start-options summary,.start-controls label{font-size:14px}
+.start-options{margin-top:16px}.start-options summary{cursor:pointer;color:var(--soft)}
+.start-controls select{min-height:44px;font-size:14px}.start-selection{color:var(--soft);overflow-wrap:anywhere}
+.task-layout{display:block}.task-fields .field-grid:has(>.advanced-field){display:none}
+.task-fields.show-advanced .field-grid:has(>.advanced-field){display:grid}
+.task-side{display:none}.task-side.show-advanced{display:block;margin-bottom:18px}
+.task-hint,.task-package-box,.task-summary{font-size:14px}.task-fields .field>span{font-size:15px}
+.task-prompt-preview>div{font-size:14px}.task-prompt-preview pre{font-size:14px;max-height:45vh;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+.task-fields .field small,#taskStatus{font-size:13px}#taskStatus{max-width:none}
+.task-fields .field-grid:empty{display:none}.task-fields .task-hint{display:none}
+.task-fields.show-advanced .task-hint{display:block}
+#saveDraft{display:none}
+@media(max-width:760px){.task-bottom-actions{grid-template-columns:1fr 1fr}.start-controls .start-selection{flex-basis:100%}.task-prompt-preview pre{max-height:35vh}.task-save-state{display:none}}
