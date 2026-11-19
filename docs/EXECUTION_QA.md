@@ -57,3 +57,5 @@
 ## 发布
 
 发布状态以 docs/DEPLOYMENT_ONE_PROMPT.md 的最终记录为准。
+
+2026-11-19 发布复核：Node 4/4、Python 6/6 再次通过。main 推送与新 release 已完成，公网文件字节与已提交源码一致；线上页面打开及搜索可观察，后续点击工具超时，线上完整复制验收保留为未完成。见 DEPLOYMENT_ONE_PROMPT.md。
